@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "chocs_middleware.api_status"
+version = "1.0.0"
+description = "Middleware providing default status monitoring endpoint"
+authors = [
+    "Dawid Kraczkowski <dawid.kraczkowski@gmail.com>",
+    "Steve ortiz <stevenortiz.es@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "chocs_middleware" }
+]
+homepage = "https://github.com/kodemore/chocs-api-status"
+repository = "https://github.com/kodemore/chocs-api-status"
+documentation = "https://github.com/kodemore/chocs-api-status"
+
+keywords = ["api", "status", "chocs", "http", "middleware"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+chocs = "^1.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^3.0.0"
+black = "^22.1.0"
+isort = "^5.10.1"
+mypy = "^0.931"
+pylint = "^2.12.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
